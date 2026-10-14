@@ -1,71 +1,31 @@
-# Raster Tech Sheet
+# Raster Run
 
-**Checks every device on your show network against your tech sheet, then writes
-the result back into the sheet.**
+**Checks every device on your show network against your tech sheet, live.**
 
-> **Early beta.** Raster Tech Sheet is new and still changing. Expect rough edges,
-> and please say what breaks.
->
-> **Formerly Neon Tech Sheet.** Same app, new name. Installs update in place, and
-> your settings and sign-in carry over.
-
-This repository holds **installers only**. Download the latest from
+This repository holds installers only. Download the latest from
 [**Releases**](../../releases/latest).
-
----
 
 ## What it does
 
 - Reads the gear list and addresses from your show's Google Sheet.
-- Checks every device on the show LAN, VLAN by VLAN.
-- Marks each one **Verified**, **Partial** or **Failed** in the sheet.
-- Keeps a live dashboard running while the show is up, on the laptop and your phone.
-- Builds a printable **Sub Packet** handoff from the sheet, for whoever runs the show
-  when you can't.
-
-It runs on a laptop connected to the show network.
+- Checks every device on the show network, VLAN by VLAN, and writes the result back to the sheet.
+- Shows a live dashboard on this computer and on your phone.
 
 ## Install
 
-### Windows 10 / 11
+**Windows 10 or 11.** Run the installer. If Windows says "Windows protected your PC",
+click **More info → Run anyway**. Leave the phone box checked and click **Yes** when Windows asks.
 
-1. Download `RasterTechSheet-Setup-<version>.exe` from [Releases](../../releases/latest).
-2. Run it. No admin rights needed. If Neon Tech Sheet is installed, it's replaced in
-   place.
-3. The beta build isn't code-signed yet, so Windows may show
-   **"Windows protected your PC"**. Click **More info → Run anyway**.
-4. If Windows asks whether to allow Raster Tech Sheet on private networks, click
-   **Allow**. Otherwise phones on the show network can't reach the dashboard.
-
-### macOS
-
-Needs an Apple Silicon Mac (M1 or later) running macOS 14 Sonoma or later. Intel
-Macs and macOS 13 or earlier aren't supported.
-
-1. Download `RasterTechSheet-<version>.dmg` from [Releases](../../releases/latest), open it and
-   drag **Raster Tech Sheet** into Applications. If you had Neon Tech Sheet, delete it.
-2. The beta build isn't notarized yet, so macOS may block it the first time.
-   Right-click the app and choose **Open**, or open **System Settings → Privacy &
-   Security**, scroll down and click **Open Anyway** next to Raster Tech Sheet. Then
-   open it again.
+**Mac** (Apple Silicon, macOS 14 or later). Open the download and drag **Raster Run** into
+Applications. The first time, click **Done**, then **System Settings → Privacy & Security →
+Open Anyway**, and **Open Anyway** again when macOS asks.
 
 ## First run
 
-1. Choose **Show Device → Sign in with Google**, using the Google account that can open your show's sheet.
-2. Pick your show sheet in Google's file picker (once on each computer).
-3. Connect the laptop to the show network and run an audit.
-
-The full beta guide is attached to each release.
-
-## Privacy
-
-We only ever access the one show sheet you pick. See the
-[privacy policy](https://raster-tech.github.io/privacy).
+1. Click **Pick Your Sheet**, sign in with Google, and choose your show's sheet.
+2. Connect to the show network and click **Audit Now**.
 
 ## Help
 
-Questions or problems: use Send feedback in the app, or email support@rastertech.app.
-
----
-
-Tech Sheet by Raster.
+**Settings → Send Feedback** in the app, or support@rastertech.app.
+[Privacy policy](https://rastertech.app/privacy).
